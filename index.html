@@ -71,7 +71,7 @@ function addCover(){
   s.cov.push({x:cx,y:cy,w:k.w,h:k.h,hp:k.hp,mx:k.hp,c:k.c,k:k.k,a:0});return}
 }
 const $=id=>document.getElementById(id);
-function gunCost(){return s.gun>=4?5000:25*(s.gun+1)*(s.gun+1)}
+function gunCost(){return s.gun>=4?7000:25*(s.gun+1)*(s.gun+1)}
 function allyCost(){return 20+15*s.allies}
 function ui(){try{rankSubmit()}catch(e){}
 $('w').textContent=s.wave;$('c').textContent=Math.floor(s.coins);$('h').textContent=Math.ceil(s.hp);$('wp').textContent=guns[s.gun].n;
